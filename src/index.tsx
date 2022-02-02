@@ -14,7 +14,6 @@ import {
 } from '@contentful/app-sdk';
 import type { KnownSDK } from '@contentful/app-sdk';
 import { GlobalStyles } from '@contentful/f36-components';
-
 import ConfigScreen from './components/ConfigScreen';
 import EntryEditor from './components/EntryEditor';
 import Page from './components/Page';

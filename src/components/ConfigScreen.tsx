@@ -59,8 +59,8 @@ const ConfigScreen = (props: ConfigScreenProps) => {
   return (
     <Flex flexDirection="column" className={css({ margin: '80px', maxWidth: '800px' })}>
       <Form>
-        <Heading>App Config</Heading>
-        <Paragraph>Welcome to your contentful app. This is your config page.</Paragraph>
+        <Heading>Polygon Markdown Editor</Heading>
+        <Paragraph>This app creates markdown fields where embedded images are added as image tags with dimensions.</Paragraph>
       </Form>
     </Flex>
   );
