@@ -1,3 +1,15 @@
+### Background
+
+This Contentful app was created to extend the default markdown editor.  Markdown is the preferred way to write content for most developers, however, it has some limitations that make it difficult to keep written content SEO-friendly.  To display images in an SEO-friendly way, you need to know the natural height and width of the image so that you can calculate aspect ratio.  Knowing the aspect ratio up front (before the image is actually loaded) allows you to reserve the proper amount of space for the image before it loads to avoid shifting content.  When embedding media into a markdown field in Contentful, even though it has the image dimensions, it does not include them because markdown doesn't support it.  When a user embeds media in the markdown editor, this plugin replaces the markdown syntax for the image with an html img tag that includes the height and width of the image to the values from the media file.  All html is valid markdown, so this is allowed.
+
+### Changes
+
+The Markdown Editor has been forked from https://github.com/contentful/field-editors/tree/master/packages/markdown/src
+and some small changes have been made to MarkdownActions insertAssetsWithConfirmation to transform the inserted media into an image tag with height and width dimensions instead of a markdown image
+
+
+
+
 This project was bootstrapped with [Create Contentful App](https://github.com/contentful/create-contentful-app).
 
 ## Available Scripts
