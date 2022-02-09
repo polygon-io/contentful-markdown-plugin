@@ -10,7 +10,7 @@ interface FieldProps {
 }
 const height = 483;
 const Field = (props: FieldProps) => {
-  props.sdk.window.updateHeight(height);
+  props.sdk.window.startAutoResizer();
   // If you only want to extend Contentful's default editing experience
   // reuse Contentful's editor components
   // -> https://www.contentful.com/developers/docs/extensibility/field-editors/
